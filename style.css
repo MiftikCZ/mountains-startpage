@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&family=Sofia+Sans:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --hue: 220;
+    font-size: 22px;
+}
+
+body {
+    font-family: 'Sofia Sans', sans-serif;
+    margin: 0;
+    padding: 0.75em;
+    font-size: 22px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(var(--hue), 10%, 74%);
+
+    background: linear-gradient(45deg, #121218, rgb(41, 41, 61));
+
+    background: url("./wallpapers/image2.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    max-width: 600px;
+    display: sticky;
+}
+
+main .hello_greeting {
+    font-size: 1.25em;
+}
+
+main .hello_greeting .sel {
+    font-weight: bold;
+}
+
+main .clocks {
+    font-weight: bold;
+    color: hsl(var(--hue), 10%, 80%);
+    font-size: 2em;
+}
+
+main .conthead {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+main .conthead .first {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main .conthead .second {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding:  0.5em;
+    background: hsla(var(--hue), 30%, 25%,25%);
+    border-radius: 3px;
+
+}
+
+
+main .contsecond {
+    font-size: 1em;
+}
+
+main .search-cont {
+    width: 100%;
+}
+
+main .contthird {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
+
+main .contthird .app-box {
+    padding: 1em;
+    background: hsla(var(--hue), 30%, 25%,25%);
+    cursor: pointer;
+    transition: 250ms;
+}
+
+main .contthird .app-box:hover {
+    background: hsla(var(--hue), 30%, 15%,25%);
+}
+
+main .search-box {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: normal;
+    width: 100%;
+    padding: 0.1em 0.5em;
+    font-size: 1em;
+    background: transparent;
+    border: none;
+    color: hsl(var(--hue), 10%, 74%);
+    border-bottom: hsla(var(--hue), 30%, 25%) 2px solid;
+    transition: 250ms;
+}
+
+main .search-box::placeholder {
+    color: hsl(var(--hue), 10%, 74%,50%);
+}
+
+main .search-box:focus-within {
+    outline: none;
+    border-bottom: hsla(var(--hue), 30%, 40%) 2px solid;
+}
+
+main .contfourth {
+    color: hsl(var(--hue), 5%, 37%);
+    font-size: 0.75em;
+}
+
+.nastaveni {
+    color: hsla(var(--hue), 30%, 25%,25%);
+    padding: 0.5em;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.nastaveni:hover {
+
+    color: hsla(var(--hue), 30%, 25%,100%);
+}
